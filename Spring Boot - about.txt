@@ -1,0 +1,17 @@
+SPRING BOOT
+maven repository: https://mvnrepository.com
+
+spring boot has a tomcat server embedded
+@EnableAutoConfiguration
+@SpringBootApplication for the main method
+Spring Boot starters:
+	spring-boot-starter-web
+	spring-boot-starter-jdbc
+	spring-boot-starter-web		(used to write REST endpoints)
+	spring-boot-starter-security	(used for Spring security)
+	spring-boot-starter-test	(used for writing test cases)
+	spring-boot-starter-...
+application.properties
+pom = project object MODELS => goal: simplify the maven configuration
+
+https://blog.algaworks.com/spring-boot/
