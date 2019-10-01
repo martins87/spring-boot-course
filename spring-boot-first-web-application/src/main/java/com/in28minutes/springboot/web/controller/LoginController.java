@@ -11,11 +11,10 @@ public class LoginController {
 
 	@RequestMapping("/login")
 //	@ResponseBody
-	public String loginMessage(@RequestParam String name, ModelMap model) {
+	public String loginMessage(ModelMap model) {
 		// makes the model available to the view page
-		model.put("name", name);
+		// model.put("name", name);
 		
-		System.out.println("name: " + name);
 		return "login";
 	}
 }
