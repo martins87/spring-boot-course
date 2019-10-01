@@ -1,7 +1,6 @@
 package com.in28minutes.springboot.web.controller;
 
-import java.security.Provider.Service;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +12,13 @@ import com.in28minutes.springboot.web.service.LoginService;
 @Controller
 public class LoginController {
 	
-	LoginService loginService = new LoginService();
+	/**
+	 * This is a component that is a dependency
+	 * It needs to be injected automatically, so no need to instantiate it
+	 * We do this with @Autowired
+	 */
+	@Autowired
+	LoginService loginService;
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 //	@ResponseBody
