@@ -36,7 +36,6 @@ public class LoginController {
 		
 		if(isValidUser) {
 			model.put("name", name);
-			model.put("password", password);
 			
 			return "welcome";
 		} else {
